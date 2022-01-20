@@ -1,0 +1,43 @@
+@import 'https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,300&family=Rajdhani&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+.navbar-brand {
+    font-size: 20;
+}
+.body{
+    background: lawngreen;
+  }
+  h1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      color: blue;
+      text-decoration: none;
+      letter-spacing: 1px;   
+  }
+  p{
+      font-family: cursive;
+      color: black;
+  }
+  
+
+.navbar .container-fluid {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+
+.navbar .navbar-brand {
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+}
+
+.navbar .container-fluid .navbar-toggle-icon span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+
+}
