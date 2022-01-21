@@ -1,43 +1,89 @@
 @import 'https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,300&family=Rajdhani&display=swap';
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 
-.navbar-brand {
-    font-size: 20;
-}
-.body{
-    background: lawngreen;
-  }
-  h1 {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-align: center;
-      color: blue;
-      text-decoration: none;
-      letter-spacing: 1px;   
-  }
-  p{
-      font-family: cursive;
-      color: black;
-  }
-  
 
-.navbar .container-fluid {
+
+#header .navbar-collapse ul {
+    list-style: none;
+    position: static;
+    background-color: transparent;
+    left: 0;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 5s ease left;
+}
+
+#header .navbar-collapse ul a {
+    font-size: .7rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
     text-decoration: none;
-    font-size: 1.2rem;
     color: white;
-    font-weight: 400;
-    font-family: sans-serif;
-}
-
-
-.navbar .navbar-brand {
-    font-size: 1rem;
-    font-family: 'Montserrat';
-}
-
-.navbar .container-fluid .navbar-toggle-icon span {
+    text-transform: uppercase;
+    padding: 10px;
     display: block;
-    width: 22px;
+}
+
+#header .navbar-collapse ul a:hover{
+    color: rgb(48, 121, 190);
+    font-weight: 500;
+    font-size: 1rem;
+    border-top: thistle 4px solid;
+    border-bottom: thistle 4px solid;
+    transition: .4s ease;
+}
+
+
+#header {
+    background-color: rgb(0, 0, 0);
+}
+
+#header .navbar-nav .nav-link.active {
+    border-top: thistle 4px solid;
+    border-bottom: thistle 4px solid;
+}
+
+/* nav button */
+
+#header .navbar-toggler {
+    background: transparent;
+    border: 3px solid white;
+    padding: 15px 10px;
+    outline: none;
+    border-radius: 50%;
+}
+
+#header .navbar-toggler:hover{
+    border: 6px solid white;
+}
+
+
+#header .navbar-toggler span{
+    display: block;
+    width: 30px;
     height: 2px;
     border: 1px;
+    background: white;
 
 }
+
+#header .navbar-toggler span + span{
+    margin-top: 6px;
+    width: 30px;
+}
+
+#header .navbar-toggler span + span + span{
+    width: 30;
+
+}
+
+#header .container span{
+    text-align: inherit;
+    font-size: 1.3rem;
+}
+
+/* end of nav button */
